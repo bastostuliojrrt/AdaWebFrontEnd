@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabeças no HTML</title>
+</head>
+<body>
+
+    <main>
+        <h1>Tabelas no HTML</h1>
+        <hr>
+        <section id="students">
+            <h2>Tabela de Alunos</h2>
+            <!-- criando tabela -->
+            <table border="2">
+                <!-- criando cabeçalho da tabela -->
+                <thead>
+                    <!-- tr cria uma linha -->
+                    <tr>
+                        <!-- th é a celula do cabeçalho -->
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+                <!-- criando corpo da tabela -->
+                <tbody>
+                    <!-- tr cria uma linha -->
+                    <tr>
+                        <!-- td é a celula com dados -->
+                        <td>Wallison</td>
+                        <td>25</td>
+                        <td>Front-End</td>
+                    </tr>
+                    <!-- tr cria uma linha -->
+                    <tr>
+                        <!-- td é a celula com dados -->
+                        <td>Wallison</td>
+                        <td>25</td>
+                        <td>Front-End</td>
+                    </tr>
+                    <!-- tr cria uma linha -->
+                    <tr>
+                        <!-- td é a celula com dados -->
+                        <td>Wallison</td>
+                        <td>25</td>
+                        <td>Front-End</td>
+                    </tr>
+                    <!-- tr cria uma linha -->
+                    <tr>
+                        <!-- td é a celula com dados -->
+                        <td>Wallison</td>
+                        <td>25</td>
+                        <td>Front-End</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="finance">
+            <h2>Tabela de Finanças</h2>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Nome</th>
+                        <th>Curso</th>
+                        <th>Pagamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- rowspan vai mesclar as linhas de acordo com a quantidade -->
+                        <td rowspan="2">15/06/2023</td>
+                        <td>Wallison</td>
+                        <td>Front-End</td>
+                        <td>R$ 2.000,00</td>
+                    </tr>
+                    <tr>
+                        <!-- é necessário excluir a linha da data pois ela foi mesclada na linha anterior -->
+                        <td>Wallison</td>
+                        <td>Front-End</td>
+                        <td>R$ 1.579,90</td>
+                    </tr>
+                    <tr>
+                        <td>23/06/2023</td>
+                        <!-- colspan vai mesclar as colunas de acordo com a quantidade -->
+                        <td colspan="2">Wallison</td>
+                        <!-- <td>Front-End</td> -->
+                        <td>R$ 2043,23</td>
+                    </tr>
+                    <tr>
+                        <td>20/06/2023</td>
+                        <td>Wallison</td>
+                        <td>Front-End</td>
+                        <td>R$ 193,70</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    
+</body>
+</html>

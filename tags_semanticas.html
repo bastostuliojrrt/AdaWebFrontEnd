@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Semânticas no HTML</title>
+</head>
+<body>
+    <!-- Cabeçalho da página da página -->
+    <header>
+        <!-- nav é a tag para menu da página -->
+        <nav>
+            Barra de navegação
+        </nav>
+    </header>
+    
+    <!-- Conteúdo principal da página -->
+    <main>
+        Conteúdo principal da página
+        <!-- A tag section é utilizada para criar seções dentro do main -->
+        <section id="about-me">
+            <h3>Sobre mim</h3>
+            <!-- Semânticamente a figure é melhor para imagens -->
+            <figure>
+                <img src="https://avatars.githubusercontent.com/u/37836280?v=4" alt="Túlio Bastos" width="150px">
+                <!-- Figurecaption é uma legenda para a imagem -->
+                <figcaption>Túlio Bastos</figcaption>
+            </figure>
+
+        </section>
+        <section id="portifolio">
+            Portifólio
+        </section>
+        <section id="blog">
+            <!-- Na tag article usamos para criar artigos -->
+            <article>
+                <!-- Dentro dela criamos um novo escopo ao qual podemos usar as memas tags semânticas do main -->
+                <header>
+                    <h1>Titulo do artigo</h1>
+                    <p>Publicado em 10/10/2021</p>
+                </header>
+
+                <main>
+                    <p>Lorem ipsum</p>
+                </main>
+                
+                <footer>
+                    <p>Comentários</p>
+                </footer>
+
+            </article>
+        </section>
+    </main>
+
+    <!-- Conteúdo fora do conteúdo principal que fica ao lado da barra -->
+    <!-- Pode ficar dentro do conteúdo main ou não -->
+    <aside>
+        Conteúdo da barra lateral
+    </aside>
+
+    <!-- Rodapé da página -->
+    <footer>
+        Rodapé da página
+    </footer>
+
+</body>
+</html>
